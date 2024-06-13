@@ -36,7 +36,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.cashierOrderForm_price = new System.Windows.Forms.Label();
             this.cashierOrderForm_prodName = new System.Windows.Forms.Label();
-            this.cashierOrderForm_newOrderBtn = new Guna.UI2.WinForms.Guna2Button();
             this.cashierOrderForm_clearBtn = new Guna.UI2.WinForms.Guna2Button();
             this.cashierOrderForm_removeBtn = new Guna.UI2.WinForms.Guna2Button();
             this.cashierOrderForm_addBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -109,13 +108,13 @@
             this.cashierOrderForm_menuTable.RowHeadersVisible = false;
             this.cashierOrderForm_menuTable.Size = new System.Drawing.Size(685, 265);
             this.cashierOrderForm_menuTable.TabIndex = 2;
+            this.cashierOrderForm_menuTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cashierOrderForm_menuTable_CellContentClick);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(23)))), ((int)(((byte)(40)))));
             this.panel2.Controls.Add(this.cashierOrderForm_price);
             this.panel2.Controls.Add(this.cashierOrderForm_prodName);
-            this.panel2.Controls.Add(this.cashierOrderForm_newOrderBtn);
             this.panel2.Controls.Add(this.cashierOrderForm_clearBtn);
             this.panel2.Controls.Add(this.cashierOrderForm_removeBtn);
             this.panel2.Controls.Add(this.cashierOrderForm_addBtn);
@@ -152,21 +151,6 @@
             this.cashierOrderForm_prodName.Size = new System.Drawing.Size(0, 18);
             this.cashierOrderForm_prodName.TabIndex = 18;
             // 
-            // cashierOrderForm_newOrderBtn
-            // 
-            this.cashierOrderForm_newOrderBtn.CheckedState.Parent = this.cashierOrderForm_newOrderBtn;
-            this.cashierOrderForm_newOrderBtn.CustomImages.Parent = this.cashierOrderForm_newOrderBtn;
-            this.cashierOrderForm_newOrderBtn.FillColor = System.Drawing.Color.SlateBlue;
-            this.cashierOrderForm_newOrderBtn.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.cashierOrderForm_newOrderBtn.ForeColor = System.Drawing.Color.White;
-            this.cashierOrderForm_newOrderBtn.HoverState.Parent = this.cashierOrderForm_newOrderBtn;
-            this.cashierOrderForm_newOrderBtn.Location = new System.Drawing.Point(540, 179);
-            this.cashierOrderForm_newOrderBtn.Name = "cashierOrderForm_newOrderBtn";
-            this.cashierOrderForm_newOrderBtn.ShadowDecoration.Parent = this.cashierOrderForm_newOrderBtn;
-            this.cashierOrderForm_newOrderBtn.Size = new System.Drawing.Size(120, 45);
-            this.cashierOrderForm_newOrderBtn.TabIndex = 30;
-            this.cashierOrderForm_newOrderBtn.Text = "NEW ORDER";
-            // 
             // cashierOrderForm_clearBtn
             // 
             this.cashierOrderForm_clearBtn.CheckedState.Parent = this.cashierOrderForm_clearBtn;
@@ -175,7 +159,7 @@
             this.cashierOrderForm_clearBtn.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cashierOrderForm_clearBtn.ForeColor = System.Drawing.Color.White;
             this.cashierOrderForm_clearBtn.HoverState.Parent = this.cashierOrderForm_clearBtn;
-            this.cashierOrderForm_clearBtn.Location = new System.Drawing.Point(380, 179);
+            this.cashierOrderForm_clearBtn.Location = new System.Drawing.Point(471, 179);
             this.cashierOrderForm_clearBtn.Name = "cashierOrderForm_clearBtn";
             this.cashierOrderForm_clearBtn.ShadowDecoration.Parent = this.cashierOrderForm_clearBtn;
             this.cashierOrderForm_clearBtn.Size = new System.Drawing.Size(120, 45);
@@ -191,7 +175,7 @@
             this.cashierOrderForm_removeBtn.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cashierOrderForm_removeBtn.ForeColor = System.Drawing.Color.White;
             this.cashierOrderForm_removeBtn.HoverState.Parent = this.cashierOrderForm_removeBtn;
-            this.cashierOrderForm_removeBtn.Location = new System.Drawing.Point(218, 179);
+            this.cashierOrderForm_removeBtn.Location = new System.Drawing.Point(309, 179);
             this.cashierOrderForm_removeBtn.Name = "cashierOrderForm_removeBtn";
             this.cashierOrderForm_removeBtn.ShadowDecoration.Parent = this.cashierOrderForm_removeBtn;
             this.cashierOrderForm_removeBtn.Size = new System.Drawing.Size(120, 45);
@@ -207,7 +191,7 @@
             this.cashierOrderForm_addBtn.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cashierOrderForm_addBtn.ForeColor = System.Drawing.Color.White;
             this.cashierOrderForm_addBtn.HoverState.Parent = this.cashierOrderForm_addBtn;
-            this.cashierOrderForm_addBtn.Location = new System.Drawing.Point(57, 179);
+            this.cashierOrderForm_addBtn.Location = new System.Drawing.Point(148, 179);
             this.cashierOrderForm_addBtn.Name = "cashierOrderForm_addBtn";
             this.cashierOrderForm_addBtn.ShadowDecoration.Parent = this.cashierOrderForm_addBtn;
             this.cashierOrderForm_addBtn.Size = new System.Drawing.Size(120, 45);
@@ -482,7 +466,6 @@
         private Guna.UI2.WinForms.Guna2Button cashierOrderForm_clearBtn;
         private Guna.UI2.WinForms.Guna2Button cashierOrderForm_removeBtn;
         private Guna.UI2.WinForms.Guna2Button cashierOrderForm_addBtn;
-        private Guna.UI2.WinForms.Guna2Button cashierOrderForm_newOrderBtn;
         private System.Windows.Forms.Panel panel3;
         private Guna.UI2.WinForms.Guna2Button cashierOrderForm_receiptBtn;
         private Guna.UI2.WinForms.Guna2Button cashierOrderForm_payBtn;

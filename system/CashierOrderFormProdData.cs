@@ -18,7 +18,7 @@ namespace system
         public string Price { set; get; }
         public string Status { set; get; }
 
-        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\USER\Documents\cafe.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\CMS.mdf;Integrated Security=True;Connect Timeout=30");
 
         public List<CashierOrderFormProdData> availableProductsData()
         {

@@ -456,5 +456,10 @@ namespace system
                 }
             }
         }
+
+        private void cashierOrderForm_menuTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
